@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ponto_localizacaos",
+  "info": {
+    "singularName": "ponto-localizacao",
+    "pluralName": "ponto-localizacaos",
+    "displayName": "ponto_localizacao",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "bairro": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::bairro.bairro",
+      "inversedBy": "ponto_localizacaos"
+    }
+  }
+}

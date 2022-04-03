@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "avaliacaos",
+  "info": {
+    "singularName": "avaliacao",
+    "pluralName": "avaliacaos",
+    "displayName": "avaliacao",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "maxLength": 15,
+      "default": "bom,muito bom, super bom",
+      "unique": true
+    }
+  }
+}

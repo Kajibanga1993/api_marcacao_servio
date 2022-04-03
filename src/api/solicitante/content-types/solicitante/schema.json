@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solicitantes",
+  "info": {
+    "singularName": "solicitante",
+    "pluralName": "solicitantes",
+    "displayName": "solicitante"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "maxLength": 120
+    },
+    "telefone": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "bilhete": {
+      "type": "string",
+      "required": true,
+      "maxLength": 15
+    },
+    "solicitacaos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::solicitacao.solicitacao",
+      "mappedBy": "solicitante"
+    }
+  }
+}

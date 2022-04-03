@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "atendentes",
+  "info": {
+    "singularName": "atendente",
+    "pluralName": "atendentes",
+    "displayName": "atendente",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "morada": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "bilhete": {
+      "type": "string",
+      "maxLength": 14,
+      "unique": true
+    },
+    "telefone": {
+      "type": "string",
+      "maxLength": 9
+    },
+    "id_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "bilhetes",
+  "info": {
+    "singularName": "bilhete",
+    "pluralName": "bilhetes",
+    "displayName": "documentos"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Documentoescolar": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "documentomilitar": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bairros",
+  "info": {
+    "singularName": "bairro",
+    "pluralName": "bairros",
+    "displayName": "bairro",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "municipio": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::municipio.municipio",
+      "inversedBy": "bairros"
+    },
+    "ponto_localizacaos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ponto-localizacao.ponto-localizacao",
+      "mappedBy": "bairro"
+    }
+  }
+}

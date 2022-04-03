@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estado_solicitacaos",
+  "info": {
+    "singularName": "estado-solicitacao",
+    "pluralName": "estado-solicitacaos",
+    "displayName": "estado_Solicitacao",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20,
+      "unique": true
+    }
+  }
+}
